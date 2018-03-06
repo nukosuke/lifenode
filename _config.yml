@@ -1,0 +1,19 @@
+# lifenode theme
+# This theme is licensed under MIT license.
+# See also LICENSE.txt for detail.
+
+title: lifenode
+author: nukosuke
+email: nukosuke@lavabit.com
+description: >-
+  lifenode is simple theme for Jekyll.
+
+# build settings
+markdown: kramdown
+theme: lifenode
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - .gitignore
+  - vendor/
