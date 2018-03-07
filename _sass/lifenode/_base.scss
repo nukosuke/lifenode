@@ -1,0 +1,20 @@
+// _base.scss
+// entire style settings
+
+$lifenode-prefix: "ln";
+
+// color
+$primary-color: #00BFFF;
+$error-color: #ea222d;
+$success-color: #9AC846;
+
+$text-color: #333;
+$border-color-split: #e8e8e8;
+$component-background: white;
+
+// font & line
+$font-family: "Sawarabi Gothic";
+$font-size-base: 14px;
+$font-size-lg: $font-size-base + 2px;
+$font-size-sm: $font-size-base - 2px;
+$line-height-base: 1.5;
