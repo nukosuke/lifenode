@@ -1,0 +1,15 @@
+// _grid.scss
+// style for grid system
+
+@import "neat/_neat";
+@import "_base";
+
+.#{$lifenode-prefix} {
+    &-column-content {
+        @include grid-column(12);
+    }
+
+    &-container {
+        @include grid-container;
+    }
+}

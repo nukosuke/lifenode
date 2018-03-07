@@ -1,5 +1,7 @@
 @charset "utf-8";
-@import "lifenode/_timeline";
+@import
+  "lifenode/_grid",
+  "lifenode/_timeline";
 
 html { font-family: $font-family; }
 *, *::before, *::after { box-sizing: border-box; }
