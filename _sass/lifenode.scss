@@ -2,4 +2,15 @@
 @import "lifenode/_timeline";
 
 html { font-family: $font-family; }
+
+a {
+    color: $link-color;
+    text-decoration: $link-decoration;
+
+    &:hover {
+        color: $link-hover-color;
+        text-decoration: $link-hover-decoration;
+    }
+}
+
 *, *::before, *::after { box-sizing: border-box; }
