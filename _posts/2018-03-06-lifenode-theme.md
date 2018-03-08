@@ -10,7 +10,7 @@ lifenode focus on writing post as mini life log.
 
 Configure `_config.yml` as below. You don't need clone the repository by using `remote_theme`. It will be automatically downloaded and applied.
 
-```diff
-- theme: minima
-+ remote_theme: nukosuke/lifenode
+```yaml
+# theme: minima
+remote_theme: nukosuke/lifenode
 ```
