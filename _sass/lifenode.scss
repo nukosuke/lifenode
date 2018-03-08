@@ -1,6 +1,7 @@
 @charset "utf-8";
 @import
   "lifenode/_grid",
+  "lifenode/_header",
   "lifenode/_syntax-highlight",
   "lifenode/_timeline";
 
@@ -17,3 +18,23 @@ a {
 }
 
 *, *::before, *::after { box-sizing: border-box; }
+
+$grid-media: (
+    columns: 12,
+    gutter: 50px,
+    media: 960px,
+);
+
+.home {
+    @include grid-media($grid-media) {
+        @include grid-column(4);
+        @include grid-shift(4);
+    }
+}
+
+.post {
+    @include grid-media($grid-media) {
+        @include grid-column(8);
+        @include grid-shift(2);
+    }
+}

@@ -3,8 +3,13 @@ layout: default
 ---
 
 <div class="home">
-  {% if page.title %}
-    {{ page.title }}
+  {% if site.title %}
+    <div class="ln-header">
+      {% if site.description %}
+        <p class="ln-header-description">{{ site.description }}</p>
+      {% endif %}
+      <h1 class="ln-header-title">{{ site.title }}</h1>
+    </div>
   {% endif %}
 
   <ul class="ln-timeline">
@@ -13,9 +18,11 @@ layout: default
         <li class="ln-timeline-item">
           <div class="ln-timeline-item-tail"></div>
           <div class="ln-timeline-item-head ln-timeline-item-head-red"></div>
-          <!--TODO: switch ln-timeline-item-head-* by post.type using case-when -->
+            <!--TODO: switch ln-timeline-item-head-* by post.type using case-when -->
           <div class="ln-timeline-item-content">
-            {{ post.date | date_to_string }} - <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+            <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+            <br/>
+            <div class="ln-timeline-item-content-date">{{ post.date | date_to_string }}</div>
           </div>
         </li>
       {% endfor %}

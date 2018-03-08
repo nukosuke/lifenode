@@ -10,7 +10,10 @@ pre, code, var, samp, kbd, .highlight {
 }
 
 .highlight {
-    pre { background-color: #333; }
+    pre {
+        background-color: #333;
+        padding: 8px;
+    }
     .hll { background-color: #333333 }
     .c { color: #008800; font-style: italic; background-color: #0f140f } /* Comment */
     .err { color: #ffffff } /* Error */
