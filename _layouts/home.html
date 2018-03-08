@@ -12,7 +12,7 @@ layout: default
       {% for post in site.posts %}
         <li class="ln-timeline-item">
           <div class="ln-timeline-item-tail"></div>
-          <div class="ln-timeline-item-head ln-timeline-item-head-blue"></div>
+          <div class="ln-timeline-item-head ln-timeline-item-head-red"></div>
           <!--TODO: switch ln-timeline-item-head-* by post.type using case-when -->
           <div class="ln-timeline-item-content">
             {{ post.date | date_to_string }} - <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
