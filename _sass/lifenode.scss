@@ -1,5 +1,5 @@
 @charset "utf-8";
-@import "lifenode/_timeline";
+@import "lifenode/_syntax-highlight", "lifenode/_timeline";
 
 html { font-family: $font-family; }
 
