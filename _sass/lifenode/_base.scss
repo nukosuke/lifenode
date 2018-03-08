@@ -13,6 +13,7 @@ $primary-7: lighten($primary-color, 15%);
 
 
 $text-color: #333;
+$text-disabled-color: lighten($text-color, 40%);
 
 // link
 $link-color: $primary-6;

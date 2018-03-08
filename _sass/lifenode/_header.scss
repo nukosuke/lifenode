@@ -1,0 +1,38 @@
+// _header.scss
+// style for header
+
+@import "neat/_neat";
+@import "_base";
+
+$header-line-width: 8px;
+$header-vertical-margin: $header-line-width * 2;
+
+.#{$lifenode-prefix}-header {
+    border-top: solid $header-line-width $text-color;
+    border-bottom: solid $header-line-width $text-color;
+    margin: $header-vertical-margin 0;
+    
+    &-title {
+    }
+
+    &-description {
+        font-size: $font-size-sm;
+    }
+}
+
+.#{$lifenode-prefix}-post-title {
+    color: $error-color;
+}
+
+.#{$lifenode-prefix}-slash-stripe {
+    width: 150px;
+    height: 16px;
+    background-image: linear-gradient(
+        -45deg,
+        #fff 25%,
+        #000 25%, #000 50%,
+        #fff 50%, #fff 75%,
+        #000 75%, #000
+    );
+    background-size: 30px 30px;
+}

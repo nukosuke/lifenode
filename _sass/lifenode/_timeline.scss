@@ -58,6 +58,10 @@ $timeline-color: $border-color-split;
             padding: 0 0 0 18px;
             position: relative;
             top: -($font-size-base * $line-height-base - $font-size-base) + 1px;
+            &-date {
+                font-size: $font-size-sm;
+                color: $text-disabled-color;
+            }
         }
 
         &:last-child {
