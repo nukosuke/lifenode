@@ -8,6 +8,9 @@ email: nukosuke@lavabit.com
 description: >-
   lifenode is simple theme for Jekyll.
 
+# URL settings
+permalink: "/:year/:month/:day/:title:output_ext"
+
 # build settings
 markdown: kramdown
 theme: lifenode
